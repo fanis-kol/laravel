@@ -1,0 +1,21 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+p {
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+.sidebar {
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}

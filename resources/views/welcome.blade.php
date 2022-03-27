@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-6 offset-6">
-                        <p>testing</p>
+                        <p class="txt">{{$user}}</p>
                     </div>
                 </div>
             </div>

@@ -10,6 +10,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 
+
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
@@ -18,7 +19,8 @@ class Controller extends BaseController
      public function index() {
 
 
-        $user = DB::table('users')->where('name', $user_input)->first();
+        $user = User::all();
+
             
         return view('welcome',compact(['user']));
         }

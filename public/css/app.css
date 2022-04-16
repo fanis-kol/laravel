@@ -11,11 +11,19 @@ p {
     font-weight: 400;
 }
 
-.sidebar {
-    background-color: #f7aa01;
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
-    font-weight: 600;
+
+h1{
+    color:#bda667;
+}
+
+.register-cont {
     text-align: center;
+}
+
+.main-navbar{
+    background-color:#30353b;
+}
+
+.main-navbar a{
+    color:#bda667;
 }

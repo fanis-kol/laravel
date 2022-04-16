@@ -21,3 +21,8 @@ Route::get('/','App\Http\Controllers\Controller@index');
 Route::view('login', 'login');
 Route::post('login', 'App\Http\Controllers\Controller@login');
 
+Route::view('/register', 'register');
+Route::post('/register', 'App\Http\Controllers\Controller@register');
+
+
+

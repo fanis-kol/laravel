@@ -2,7 +2,9 @@
 
 
 @section('content')
-        <p>{{ $user }}</p>
+        <div class="main">
+                <p>{{ $user }}</p>
+        </div>
 @endsection
 
 <script>

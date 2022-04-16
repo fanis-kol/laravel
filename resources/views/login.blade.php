@@ -1,3 +1,5 @@
+@extends('layouts.main')
+@section('content')
 <div class="main">
     <div class="container">
         <div class="row">
@@ -12,3 +14,4 @@
         </div>
     </div>
 </div>
+@endsection

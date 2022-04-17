@@ -16,4 +16,7 @@
       </li>
     </ul>
   </div>
+  <div class="logged-user">
+    <p>{{$user}}</p>
+  </div>
 </nav>

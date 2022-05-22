@@ -19,12 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','App\Http\Controllers\Controller@index');
 
 Route::view('login', 'login');
-Route::post('login', 'App\Http\Controllers\Controller@login');
 
 Route::view('/register', 'register');
-Route::post('/register', 'App\Http\Controllers\Controller@register');
-
-
 
 
 Auth::routes();
@@ -38,3 +34,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::group(['middleware' => ['auth']], function() {
+   Route::get('/logout', [App\Http\Controllers\LogoutController::class, 'perform'])->name('logout.perform');
+});

@@ -14,9 +14,11 @@
       <li class="nav-item">
         <a class="nav-link" href="/login">Login</a>
       </li>
+       @if(Auth::check())
+       <li>
+         <p>ok</p>
+      </li>
+       @endif
     </ul>
-  </div>
-  <div class="logged-user">
-    <p>{{$user}}</p>
   </div>
 </nav>

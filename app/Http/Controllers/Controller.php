@@ -21,40 +21,18 @@ class Controller extends BaseController
 
 
     public function index() {
-        $user = User::where('name')->get();
-        return view('welcome',compact(['user']));
-    }
-
-    public function register(Request $request ){
-
-
-       $request->validate([
-            'name' => 'required',
-            'email' => 'required|unique:users',
-            'password' => 'required'
-        ]);
-           
-       $user = new User();  
-       $user ->name = request('name');
-       $user ->email = request('email');
-       $user ->password = request('password');
-       $user ->save();
-
-
-        return back();
-    }
-
-    
-  
-    function login(Request $req){
-      $user = User::where('name', $req->input('name'))->get();
+        $users = User::where('name', '>' ,'0')->get();
         
-      if ($user->count() > 0) {
-        return redirect('/');
-      } else {
-        return redirect('/login');
-      }
+        $user = Auth::user();
+
+        // dd($user);
+
+        
+
+       
+        return view('home',compact(['users','user']));
     }
+
 }
 
 

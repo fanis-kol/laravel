@@ -28,3 +28,25 @@ h1{
 .main-navbar a{
     color:#bda667;
 }
+
+.users-cont{
+    width:100%;
+    position:relative;
+    margin-left:50%;
+    margin-right:50%;
+    text-align:left;
+}
+.users-cont li{
+    color:white;
+    font-size:14px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight:500;
+}
+
+button{
+    background-color:#6b6146;
+    height:30px;
+    width:150px;
+    color:white;
+    font-family:'Times New Roman', Times, serif;
+}

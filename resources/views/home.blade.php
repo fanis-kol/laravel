@@ -15,6 +15,19 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+
+                    <div class="">
+                        <form class="my-form">
+                            <select class="select_opt" required>
+                                <option selected disabled hidden>Choose Country</option>
+                                <option value="gr">Greece</option>
+                                <option value="de">Germany</option>
+                                <option value="en">England</option>
+                            </select>
+                        </form>
+                        <br>
+                        <button class="btn submit-btn" form="my-form" value="submit">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>

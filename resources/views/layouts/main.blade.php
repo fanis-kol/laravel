@@ -19,19 +19,26 @@
       <script>
 
          $(document).ready(function() {
-            $('.select-opt').select2();
+           $(".select-opt").select2();
          });
           
+         $(document).ready(function (){           
+            $.validator.addMethod('selectValid', function(value, ele, param){ 
+                return value != '';
+            }, 'Select Country');
 
-         // $('.select-opt').on('change',function(){
-         //    alert( this.value );
-         // });
-
-         $('.my-form').validate({ // initialize the plugin
-            rules: {
-          select_opt:{ required: true},
-            }
+            $('form').validate({
+               rules:{
+                  country:{
+                     selectValid:true,
+                  }
+               }
+            })
+            $('.submit-btn').on('click', function(){
+               console.log($('form').valid());
+            });
          });
+
       
       </script>
    </body>

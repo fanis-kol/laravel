@@ -24,6 +24,17 @@
                                 <option value="de">Germany</option>
                                 <option value="en">England</option>
                             </select>
+                            <select class="select-opt form-control" name="name" data-placeholder="Select name">
+                                <option></option>
+                                <option value="john">John</option>
+                                <option value="dave">Dave</option>
+                                <option value="henry">Henry</option>
+                            </select>
+                            <select class="select-opt form-control" name="movie" data-placeholder="Select movie">
+                                <option></option>
+                                <option value="lord">Lord Of The Rings</option>
+                                <option value="godfather">The Godfather</option>
+                            </select>
                         </form>
                         <br>
                         <button class="btn submit-btn" form="my-form" type="submit" value="submit">Submit</button>

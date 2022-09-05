@@ -30,9 +30,21 @@
             $('form').validate({
                rules:{
                   country:{
-                     selectValid:true,
+                     required:true
+                  },
+                  name:{
+                     required:true
+                  },
+                  movie:{
+                     required:true
                   }
+               },
+               messages:{
+                  country:{required:'test'},
+                  name:{required:'testing'},
+                  movie:{required:'Chose a movie'}
                }
+
             })
             $('.submit-btn').on('click', function(){
                console.log($('form').valid());

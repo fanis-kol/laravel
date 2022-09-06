@@ -18,16 +18,15 @@
       
       <script>
 
-         $(document).ready(function() {
-           $(".select-opt").select2();
-         });
           
-         $(document).ready(function (){           
-            $.validator.addMethod('selectValid', function(value, ele, param){ 
-                return value != '';
-            }, 'Select Country');
-
-            $('form').validate({
+          
+         $(document).ready(function (){ 
+            $(".select-opt").select2();          
+           
+           
+            $('.submit-btn').on('click', function(){
+               let form = $('#my-form')
+               form.validate({
                rules:{
                   country:{
                      required:true
@@ -40,13 +39,14 @@
                   }
                },
                messages:{
-                  country:{required:'test'},
-                  name:{required:'testing'},
-                  movie:{required:'Chose a movie'}
+                  country:{required:'Required'},
+                  name:{required:'Required'},
+                  movie:{required:'Required'}
                }
 
             })
-            $('.submit-btn').on('click', function(){
+
+
                console.log($('form').valid());
             });
          });

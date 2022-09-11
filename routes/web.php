@@ -17,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/','App\Http\Controllers\Controller@index');
+Route::get('/books','App\Http\Controllers\BookController@index');
 
 Route::view('login', 'login');
 

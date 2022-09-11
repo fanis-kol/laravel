@@ -46,7 +46,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-3">                       
-                                    <label for="movie"> Moive :</label>
+                                    <label for="movie"> Movie :</label>
+                                    
                                 </div>
                                 <div class="col-9">
                                     <select class="select-opt form-control movie" name="movie" data-placeholder="Select movie">
@@ -58,7 +59,14 @@
                             </div>
                         </form>
                         <br>
-                        <button class="btn submit-btn" form="my-form" type="submit" value="submit">Submit</button>
+                        <button class="btn submit-btn" form="my-form">Submit</button>
+
+                        <div class="row">
+                            <div class="upload-cont">
+                                <label for="myfile">Select a file:</label>
+                                <input type="file" id="myfile" name="myfile">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

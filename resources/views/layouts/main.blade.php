@@ -26,6 +26,7 @@
            
             $('.submit-btn').on('click', function(){
                let form = $('#my-form')
+               
                form.validate({
                rules:{
                   country:{

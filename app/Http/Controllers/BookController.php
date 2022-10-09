@@ -17,6 +17,9 @@ class BookController extends Controller
         // ->addMedia('images/lordoftherings.jpg')
         // ->toMediaCollection();
         // dd($book->getMedia());
+
+        $test = ['09', 10, 11, 12, 13];
+        $a = array_flip($test);
         return view('books');
     }
 }

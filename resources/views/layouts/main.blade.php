@@ -7,6 +7,7 @@
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
       <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
+
    </head>
    <body>
       @include('partials/sidebar')
@@ -15,44 +16,17 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/dropzone.min.js"></script>
+
       
       <script>
 
-          
-          
-         $(document).ready(function (){ 
-            $(".select-opt").select2();          
-           
-           
-            $('.submit-btn').on('click', function(){
-               let form = $('#my-form')
-               
-               form.validate({
-               rules:{
-                  country:{
-                     required:true
-                  },
-                  name:{
-                     required:true
-                  },
-                  movie:{
-                     required:true
-                  }
-               },
-               messages:{
-                  country:{required:'Required'},
-                  name:{required:'Required'},
-                  movie:{required:'Required'}
-               }
-
-            })
-
-
-               console.log($('form').valid());
-            });
+      $(document).ready(function(){
+         $(".accordion").click(function(){
+            console.log('test');
+            $(this).siblings().toggleClass('show');
          });
-
-      
+      });
       </script>
    </body>
 </html>

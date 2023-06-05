@@ -13,13 +13,10 @@ class BookController extends Controller
     public function index()
     {
         $book = Book::first();
-        // $book
-        // ->addMedia('images/lordoftherings.jpg')
-        // ->toMediaCollection();
-        // dd($book->getMedia());
+        $book
+        ->addMedia('images/lordoftherings.jpg')
+        ->toMediaCollection();
 
-        $test = ['09', 10, 11, 12, 13];
-        $a = array_flip($test);
         return view('books');
     }
 }

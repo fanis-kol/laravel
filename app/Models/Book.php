@@ -12,11 +12,18 @@ class Book extends Model implements HasMedia
    
     protected $fillable = [
         'name',
+        "user_id",
         'author'
     ];
-
-
-
-
    
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+
+
+
+
 }

@@ -11,7 +11,6 @@ p {
     font-weight: 400;
 }
 
-
 h1{
     color:#bda667;
 }
@@ -83,4 +82,10 @@ button{
 
 .panel.show{
     display:block;
+}
+
+.book-container{
+    background-color: #232323;
+    color: #ccc;
+    max-width: 250px;
 }

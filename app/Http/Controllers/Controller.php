@@ -25,11 +25,8 @@ class Controller extends BaseController
         
         $user = Auth::user();
 
-        // dd($user);
-
-        
-
        
+
         return view('home',compact(['users','user']));
     }
 

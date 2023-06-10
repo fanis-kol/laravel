@@ -16,11 +16,15 @@ class BookController extends Controller
 
     
         $book = Book::first();
-        $book
-        ->addMedia('images/lordoftherings.jpg')
-        ->toMediaCollection();
 
-        $user->id = $book->user_id;
+        if($book){
+            $book
+            ->addMedia('images/lordoftherings.jpg')
+            ->toMediaCollection();
+        }
+      
+
+        // $user->id = $book->user_id;
 
         return view('books');
     }

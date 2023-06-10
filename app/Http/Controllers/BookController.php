@@ -14,17 +14,7 @@ class BookController extends Controller
     public function index()
     {   
 
-    
-        $book = Book::first();
 
-        if($book){
-            $book
-            ->addMedia('images/lordoftherings.jpg')
-            ->toMediaCollection();
-        }
-      
-
-        // $user->id = $book->user_id;
 
         return view('books');
     }

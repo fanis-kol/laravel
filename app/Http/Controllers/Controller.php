@@ -21,13 +21,16 @@ class Controller extends BaseController
 
 
     public function index() {
-        $users = User::where('name', '>' ,'0')->get();
         
         $user = Auth::user();
 
+        if($user){
+
+        }
+
        
 
-        return view('home',compact(['users','user']));
+        return view('home',compact(['user']));
     }
 
 }

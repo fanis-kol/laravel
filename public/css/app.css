@@ -1,7 +1,5 @@
-.main {
-    width: 100vw;
-    height: 100vh;
-    background-color: #232323;
+body {
+    background-color: #025464 !important;
 }
 
 p {
@@ -21,11 +19,11 @@ h1{
 }
 
 .main-navbar{
-    background-color:#30353b;
+    background-color:#2f2e2c;
 }
 
 .main-navbar a{
-    color:#bda667;
+    color:#F8F1F1;
 }
 
 .users-cont{

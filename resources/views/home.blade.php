@@ -7,10 +7,12 @@
         @if(isset($books))
             @foreach($books as $book)
                 <div class="col-12">
-                    <p class="name">{{$book->name}}</p>
-                    <p class="publisher">{{$book->publisher}}</p>
-                    <p class="author">{{$book->author}}</p>
-                    <p class="year">{{$book->year}}</p>
+                    <div class="books-wrap">
+                        <p class="name">{{$book->name}}</p>
+                        <p class="publisher">{{$book->publisher}}</p>
+                        <p class="author">{{$book->author}}</p>
+                        <p class="year">{{$book->year}}</p>
+                    </div>
                 </div>
             @endforeach
         @endif

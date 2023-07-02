@@ -15,7 +15,7 @@
         <a class="nav-link" href="/login">Login</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/books">Books</a>
+        <a class="nav-link" href="/book">Books</a>
       </li>
        @if(Auth::check())
        <li>

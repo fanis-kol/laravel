@@ -11,9 +11,10 @@ class Book extends Model implements HasMedia
    use HasMediaTrait;
    
     protected $fillable = [
-        'name',
-        "user_id",
+        'title',
         'author',
+        'genre',
+        'length',
         "published"
     ];
    

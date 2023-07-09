@@ -7,7 +7,7 @@
     <div class="row">
         @if(isset($books))
             @foreach($books as $book)
-            <div class="col-12">
+            <div class="col-4">
                 <div class="book-wrap">
                     <p class="book-title">{{$book->title}}</p>
                     <!-- <div class="book-cover-wrap">

@@ -91,4 +91,26 @@ button{
 
 .book-wrap{
     border: 1px solid black;
+    height:150px;
+    margin-bottom: 20px;    
+}
+
+.book-title{
+    color:white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.author-name{
+    font-size: 14px;
+    color:white;
+    font-weight: 200;
+}
+
+.card-body{
+    background: antiquewhite;
+}
+
+.card-header{
+    background:antiquewhite !important;
 }

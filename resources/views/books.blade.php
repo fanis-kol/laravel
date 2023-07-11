@@ -13,9 +13,10 @@
                     <!-- <div class="book-cover-wrap">
                         <img src="{{$book->cover}}" class="book-cover">
                     </div> -->
-                    <p class="book-description">{{$book->description}}</p>
+                    <p class="book-genre">{{$book->genre}}</p>
+                    <p class="book-pages">{{$book->pages}}</p>
                     <p class="author-name">{{$book->author}}</p>
-                    <p class="published">{{$book->published}}</p>
+                    <p class="publisher">{{$book->publisher}}</p>
                 </div>
             </div>
              @endforeach

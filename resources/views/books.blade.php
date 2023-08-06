@@ -9,14 +9,11 @@
             @foreach($books as $book)
             <div class="col-4">
                 <div class="book-wrap">
-                    <p class="book-title">{{$book->title}}</p>
-                    <!-- <div class="book-cover-wrap">
-                        <img src="{{$book->cover}}" class="book-cover">
-                    </div> -->
-                    <p class="book-genre">{{$book->genre}}</p>
-                    <p class="book-pages">{{$book->pages}}</p>
-                    <p class="author-name">{{$book->author}}</p>
-                    <p class="publisher">{{$book->publisher}}</p>
+                    <p class="book-title">Title: {{$book->title}}</p>
+                    <p class="book-genre">Genre: {{$book->genre}}</p>
+                    <p class="book-pages">Pages: {{$book->pages}}</p>
+                    <p class="author-name">Author: {{$book->author}}</p>
+                    <p class="publisher">Publisher: {{$book->publisher}}</p>
                 </div>
             </div>
              @endforeach

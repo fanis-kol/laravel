@@ -24,7 +24,7 @@
       </li>
        @if(Auth::check())
        <li>
-         <p>ok</p>
+         <p class="text-uppercase">{{Auth::user()->name}}</p>
       </li>
        @endif
     </ul>

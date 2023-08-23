@@ -17,7 +17,7 @@ class BookController extends Controller
 
         $user = Auth::user();
 
-        $books = Book::all();
+        $books = Book::all(); 
 
         return view('books', compact('books' , 'user'));
     }

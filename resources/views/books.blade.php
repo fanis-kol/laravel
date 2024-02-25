@@ -12,6 +12,9 @@
             @foreach($books as $book)
             <div class="col-12 col-md-6">
                 <div class="book-wrap">
+                    <div class="book-cover-wrap">
+                        <img class="book-cover" src="/images/book-cover.webp">    
+                    </div>
                     <p class="book-title text-uppercase">{{$book->title}}</p>
                     <p class="book-genre text-uppercase"> {{$book->genre}}</p>
                     <p class="book-pages text-uppercase">Pages: {{$book->pages}}</p>
